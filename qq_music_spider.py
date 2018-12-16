@@ -10,14 +10,6 @@ import re
 import traceback
 import time
 
-#缺少对
-# 歌曲分类，歌词，风格，其他歌名
-#1.抓取所有的分类的id，然后拼接出对应的分类的链接
-#2.访问分类的链接，抓于歌名的相关信息的获取取所有歌单的详细页面的链接
-#3.访问详细页面的链接，抓取所有歌曲的详细页面的链接
-#4.抓取歌曲的信息，并将歌曲名传递给download_music实现，下载对应音乐文件
-
-
 def getMusicClassList(classList):
     url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_tag_conf.fcg'
     user_agent_list = [
